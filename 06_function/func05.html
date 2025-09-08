@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - function</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>関数 その4 - 無名関数</h2>
+    <p>
+      関数作成時には、関数名を記入し作成を行いましたが、<br>
+      function (){ }の様に関数名がないものを、「無名関数」といいます。<br>
+      関数名がありませんのであとで呼び出す事ができない変わりに、その場限りのインスタントな関数です。<br>
+      clickイベント等の時に記載している<br>
+      () => { } これも無名関数の1つで、アロー関数と言います。<br>
+      今後、モダンなJavaScript開発をする上で、よく使われるものになりますので、合わせて覚えておくと良いです。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="vYzBYzQ" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/vYzBYzQ">
+      function04</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>どちらもきちんと動作します</p>
+
+    <h3>関数 - 即時関数の作成</h3>
+    <p>
+      変数 func を作成し、アロー関数を代入しましょう。<br>
+      コンソール画面にfuncを出力し、アロー関数が格納されていることを確認します。
+    </p>
+    <div class="view">
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        通常の関数（無名関数）とアロー関数（es6から追加）は、書き方が短くなったものではなく、細かな振る舞いが異なります。<br>
+        JavaScriptは歴史の古い言語のため、古くからある言語機能とes6から追加されたものなど混同します。<br>
+        今後JavaScriptのフレームワークなど、モダンな開発へとさらに学習を進みたい場合、新しく追加された機能や各種違いなどを<br>
+        掘り下げて理解をすすめましょう。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/function05.js"></script>
+</body>
+</html>

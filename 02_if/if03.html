@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>if文3</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      A/B/Cと複数の条件を指定したい場合には、else if()を追加します。<br>
+      条件が増えるにつれて、確認する項目を多くなってきますので、<br>
+      prompt()を使って、テキストを入力する画面を使いながら確認します。
+    </p>
+    <!-- codepen -->
+    <h3>条件式 - コンソール画面で確認</h3>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="yLqKLEQ" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/yLqKLEQ">
+      条件分岐03</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>コンソール画面を開いて、入力ボックスに「19 20 21」 とそれぞれ入力すると、結果の違いを確認できます。</p>
+    
+    <h3>条件文を書いてみましょう</h3>
+    <div class="view">
+      <p>
+        定数 walletを作成し、3000を代入する<br>
+        変数 itemを作成し、prompt()を入れ、数値に変換しておく ※上記サンプル参考<br>
+
+        prompt画面で、金額を入力（半角英数）し、お財布（wallet）にある所持金で購入出来るかを検討しましょう。<br>
+        購入可能な場合、「購入することができます」と表示する<br>
+        価格が3000の場合、「ピッタリです」と表示する<br>
+        購入ができない場合、「購入することができません」と表示する
+      </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        今回はprompt()を使って、ユーザーが入力する画面を用意しましたが、<br>
+        HTML上で扱う場合には、input要素を使う事が想定されます。<br>
+        HTML上の入力フォームに関しても、入力された値は文字になるため、数値として取り扱いたい場合<br>
+        数値への変換が必要です。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/if03.js"></script>
+</body>
+</html>

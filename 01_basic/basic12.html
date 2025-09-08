@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - ウィンドウに出力する</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>要素の取得 - イベント</h2>
+    <p>
+      basic11では、すでに入力済のvalue属性を取得することができました<br>
+      次は入力された内容をボタンを押したタイミングでvalue値を取得するために、イベントを追加しましょう。<br>
+      下記コード、btnIDをクリックしたら実行するイベントを書きたい場合
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NWBaeOd" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/NWBaeOd">
+      Untitled</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>コンソール画面でボタンをクリックして確認</p>
+    <h3>value値の取得</h3>
+    <p>
+      下記に記載するtextIDのあるinput要素に文字を入力し、クリックすると入力されたvalue値をコンソール画面へ表示しましょう。<br>
+      入力した文字をコンソール画面に表示されればOKです。
+    </p>
+    <div class="view">
+      <p><input type="text" value="" id="text"><input type="button" id="btn" value="ボタン">clickイベントを使ってtextIDのvalue値を取得する</p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          ユーザーがテキストを入力するタイミングは、ブラウザが表示された後に入力します。<br>
+          表示された後に値を取得したい場合には、イベント（マウスやウィンドウ、キーボードなど）を用意し、値を取得します。<br>
+          マウスイベントには、他にも多数のイベントがありますので下記URLを参考に必要に応じて調べてください<br><br>
+          <a href="https://phpjavascriptroom.com/?t=js&p=event" target="new">onイベント一覧</a><br><br>
+          ※ 基礎をある程度終了すると、addEventListenerでイベント実行する形も習得することが望ましいです。
+      </p>
+    </div>
+  </section>
+  </main>
+  <script>
+    // basicの間はここにJavaScriptを直接記載しましょう
+    // 定数btnを作成する
+    const btn = document.getElementById("btn");
+    // 定数textを作成する
+    const text = document.getElementById("text");
+    // 定数btnがクリックされたら
+btn.onclick =() => {
+  console.log("これでもいいよ");
+  
+};
+
+
+    btn.addEventListener("click",() => {
+      
+      // 変数 textValueを作成し、textのvalueを代入する
+      let textValue = text.value;
+      // コンソール画面に変数textValueを表示
+      console.log(textValue);
+
+    })
+    
+
+    
+  </script>
+</body>
+</html>

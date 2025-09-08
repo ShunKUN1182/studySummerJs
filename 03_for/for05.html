@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>for文</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      for04では、任意の回数繰り返す様に作りましたが、<br>
+      今のままでは、数値以外が入力された場合などうまく動きません。<br>
+      if文を組み合わせて、該当する数値の範囲だけ動くように変更しましょう。
+    </p>
+    
+    <h3>N回の繰り返し - 数値の時だけ動かす</h3>
+    <div class="view">
+      <p>
+        for04.jsを複製し、for05.jsにします。<br>
+        1から50までの数値を入力した時のみ、コンソール画面で表示されるようにコードを変更しましょう。<br>
+        もし、数値の範囲以外が入力された場合は「1から50の数値を入れてください」とコンソール画面で表示しましょう
+      </p>
+
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        組み合わせて考えて作る必要がそろそろ出てきました。<br>
+        手順をしっかり把握しましょう。<br>
+        今回の手順であれば<br>
+        1.prompt()で数値を入力する<br>
+        2.数値の範囲を調べる<br>
+        3.繰り返す<br>
+        の手順になりそうです。<br>
+        ifやforをいつ書けば良いかは、手順を参考になるはずです。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/for05.js"></script>
+</body>
+</html>

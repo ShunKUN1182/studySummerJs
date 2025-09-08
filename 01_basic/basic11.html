@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - ウィンドウに出力する</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>要素の取得 - 属性</h2>
+    <p>
+      id属性を目印に、要素の取得が行えたら、対象の要素のデータの取得を行いましょう。<br>
+      value属性の取得<br>
+      下記の様なid属性textのテキストボックスがあったとします。<br><br>
+      &lt;input type="text" value="hello" id="text"&gt; <br><br>
+      value値には、helloという値が入っていますので、表示されるテキストボックスには<br>
+      helloという文字が予め入った状態です。<br>
+      value内の情報が欲しい場合<br>
+      id属性textのvalue値を取得したいので、下記の様に記載します<br><br>
+      document.getElementById("text").value <br><br>
+      .（ドット）には、「の」や「中に」等の接続詞としての意味がありますので、対象の要素内を参照したい場合にはドットを記載して続きを記載します。<br>
+      下記のtextIDのvalue値を実際にコンソールに出力してみましょう。
+    </p>
+
+    <h3>value値の取得</h3>
+    <p>
+      下記に記載するtextIDのあるinput要素のvalue値をコンソール画面に表示しましょう。
+    </p>
+    <div class="view">
+      <p><input type="text" value="hello" id="text"> textIDのvalue値を取得する</p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          value属性に何も値が入っていない状態（value=""の時）では<br>
+          後から入力してもコンソール画面には表示されません。<br>
+          これは、コンソール画面を表示するタイミングが、ブラウザが読み込まれた（表示された）タイミングで<br>
+          表示されるためです。
+      </p>
+    </div>
+  </section>
+  </main>
+  <script>
+    // basicの間はここにJavaScriptを直接記載しましょう
+    // 定数textを作成する
+    const text = document.getElementById("text").value;
+    // コンソールにtextのvalue値を表示
+    console.log(text);
+    
+
+  </script>
+</body>
+</html>

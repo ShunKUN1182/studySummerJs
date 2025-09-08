@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - timer</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>timer その1 - setTimeout</h2>
+    <p>
+      Webサイトの機能で、時間に差があった後に動作するものがあります。<br>
+      例えば、数秒待つと画像が切り替わるものや、ボタンが表示されるなど<br>
+      setTimeoutを使うと、指定した秒数後に実行することが可能です。<br>
+      setTimeout( callback , duration)<br>
+      サンプルコードでは、2秒経つとテキストが表示されます。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="wvEwdbE" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/wvEwdbE">
+      timer01</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面で確認</p>
+
+    <h3>時間差で文字の出力</h3>
+    <div class="view">
+    <p>
+      3秒経つと、textIDに「hello」と表示されるようにしましょう。
+    </p>
+    <p>3秒経つと挨拶メッセージが表示されます。<span id="text" style="font-size: 40px;color:tomato"></span></p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          秒数の単位は、ミリ秒です。1000ミリ秒で1秒となりますので、CSSの様に1sとは指定できませんのでご注意ください。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/timer01.js"></script>
+</body>
+</html>

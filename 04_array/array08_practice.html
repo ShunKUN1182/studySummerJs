@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 配列</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>配列 - おみくじ</h2>
+    <p>
+      配列 omikuji に下記内容をいれましょう<br>
+      大吉 / 中吉 / 小吉 / 吉 / 凶 / 大凶
+    </p>
+
+    <h3>配列の作成</h3>
+    <div class="view">
+    <p>
+      array08_practice.jsにある変数noには、0-5までランダムな値が入る。<br>
+      変数noを使っておみくじの表示を作りましょう。<br>
+      それぞれの表示画面は下記のとおり<br>
+      大吉の場合：「大吉ですおめでとう！」<br>
+      中吉の場合：「中吉ですラッキー！」<br>
+      吉の場合：「コメントに困る吉です」
+      小吉の場合：「小吉です」<br>
+      凶の場合：「凶ですアンラッキー」<br>
+      大凶の場合：「大凶です残念・・・」<br><br>
+      大吉などの表示は、配列omikujiから表示できるようにしておくこと。
+    </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          ランダムな数字（0-5）それぞれで違うメッセージを表示するため<br>
+          条件分岐を使って表示の振り分けを行いましょう。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/array08_practice.js"></script>
+</body>
+</html>

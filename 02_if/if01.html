@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>if文</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      入力された値など、特定の条件の時に処理を変更したい場合に使います。<br>
+      こういった条件に合わせて実行する内容を変えたい場合に使うものなので「条件分岐」といいます。
+      例)<br>
+      年齢を入力して、年齢に応じて表示を切り替えたい<br>
+      スクロールされた位置に合ったタイミングで表示したい<br>
+      <br>
+      書き方<br>
+      if(条件){ 条件に合う場合 }
+    </p>
+    <!-- codepen -->
+    <h3>条件式 - コンソール画面で確認</h3>
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="ExpQbgz" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/ryuzie/pen/ExpQbgz">
+    条件分岐</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>
+      変数ageに20と19を比べて条件を満たしているので、コンソール画面に「成人しています。」と表示されます。<br><br>
+      条件には、下記の比較演算子を使って条件を作成します。<br>
+      A &lt; B　AはBより小さい時<br>
+      A &gt; B　AはBより大きい時<br>
+      A &lt;= B　AはB以上の時<br>
+      A &gt;= B　AはB以下の時<br>
+      A == B　AとBが同じ時<br>
+      A != B　AとBが同じではない時<br>
+      A === B　AとBが完全に同じ時 ※文字同士など、型まで同じ時
+
+    </p>
+    <h3>条件文を書いてみましょう</h3>
+    <div class="view">
+      <p>
+        定数 itemAを作成し、200を代入する<br>
+        定数 itemBを作成し、200を代入する<br>
+        itemAとitemBを比べて、同じ場合という条件文を書き<br>
+        同じ条件の場合に、「同じ数値です」とコンソール画面に表示させること。
+      </p>
+
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        同じ時とは、==を使って表しますが、文字と数値では型が違うため厳密には同じではありません。<br>
+        定数を作成する歳に、片方を文字列 "200" に設定し、条件がどうなるか確認しましょう。<br>
+        変数や定数を作成する際、カンマを使って複数同時に作成することも可能です。<br>
+        例） let num,text;
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/if01.js"></script>
+</body>
+</html>

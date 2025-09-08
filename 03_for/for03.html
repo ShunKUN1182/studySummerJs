@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>for文</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      for文を使って、2の段の掛け算をコンソールで表示してみましょう。
+    </p>
+    
+    <h3>2の段の表示</h3>
+    <div class="view">
+      <p>
+        for文を使って、2の段の掛け算を出力します。<br>
+        表示内容は、<br>
+        「2」「4」「6」...「20」となるようにコンソール画面に表示させましょう。
+      </p>
+
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        変数iは繰り返しで使う変数のため、変数に値を代入してはいけません。<br>
+      </p>
+      <pre><code>
+        NG）実行される度に変数iに3が代入され、繰り返しが終わらなくなります
+          for(let i=0; i&lt;3; i++){
+            i = 3;
+          }
+
+        OK)変数iに1を足したものをnoに代入するため、変数iの値は変わらない
+          for(let i=0; i&lt;3; i++){
+            const no = i + 1;
+          }
+      </code></pre>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/for03.js"></script>
+</body>
+</html>

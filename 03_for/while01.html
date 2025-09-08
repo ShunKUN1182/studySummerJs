@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>while文</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      何回繰り返すか分からない場合には、while文でループ処理することも可能です<br>
+      while( 条件 ){<br>
+        //条件に合う場合（true）の場合は実行されます<br>
+      }<br>
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="BaPxdRr" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/BaPxdRr">
+      繰り返し03</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>条件に合う間はwhileが繰り返し実行されます</p>
+
+    <h3>実際に繰り返し文を書いてみましょう</h3>
+    <div class="view">
+      <p>
+        変数 mp を作成し、100を代入する<br>
+        while文を使って毎回mpを7減らし、コンソール画面にmpの残量<br>
+        「残りmpはxxxです」と表示しましょう。
+      </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        for文は何回実行するかの回数を指定して繰り返しますが<br>
+        while文は条件に合わなくなるまで繰り返します。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/while01.js"></script>
+</body>
+</html>

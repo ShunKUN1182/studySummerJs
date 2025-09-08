@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - DOM</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>DOMその7 - CSSの変更</h2>
+    <p>
+      JavaScriptからCSSのスタイルを変更しましょう。<br>
+      要素.style.プロパティ　を使って変更することができます。<br>
+      下記サンプルコードを確認してみましょう。<br>
+      要素にCSSを管理するstyleという中にCSSのプロパティがありますが<br>
+      背景色の場合、background-color と-が入るプロパティをJavaScriptで書く場合<br>
+      単語を大文字にするルールがあります。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="zYLLJXg" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/zYLLJXg">
+      dom07</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面で文字を入力し、ボタンを押して動作を確認</p>
+
+    <h3>要素の挿入</h3>
+    <div class="view">
+      <p>
+        ボタンを押すと、文字のサイズが80pxになる
+      </p>
+      <button id="btnL">文字サイズを80pxに</button>
+      <button id="btnS">文字サイズを20pxに</button>
+      <p id="text">ここの文字サイズをボタンに合わせて変更しましょう</p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          ボタンが２つあるので、それぞれクリックイベントを作る必要があります。<br>
+          80pxや20pxは数値でなく文字なので設定する際に注意してください。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/dom08.js"></script>
+</body>
+</html>

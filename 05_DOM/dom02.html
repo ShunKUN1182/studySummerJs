@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - DOM</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>DOMその2</h2>
+    <p>
+      body要素を直接編集すると、この画面も確認することができません。<br>
+      要素を指定して特定の要素の情報をアクセスしましょう<br><br>
+      要素のID名で指定したい時<br>
+      getElementById(id名)で特定の要素を指定することが可能です。<br>
+      下記サンプルコードを確認してみましょう。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="NWBzNpV" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/NWBzNpV">
+      dom02</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面でhelloが入っていることを確認</p>
+
+    <h3>DOMの作成</h3>
+    <div class="view">
+      <div id="text">
+        ここに書いている文字をコンソール画面に表示してみましょう。
+      </div>
+    <p>
+      コンソール画面に表示することができたら、<br>
+      id名textに対して ECCComp. とh1要素で上書き表示を行いましょう。
+    </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          innerHTMLは名前の通り、HTMLを入れることが可能です。<br>
+          文字で要素を指定するため、"または'を書くことを忘れないようにしてください。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/dom02.js"></script>
+</body>
+</html>

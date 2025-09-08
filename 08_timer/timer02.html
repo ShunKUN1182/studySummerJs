@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - timer</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>timer その2 - setTimeoutの繰り返し</h2>
+    <p>
+      setTimeoutは、指定した秒数経ったあと実行されます。<br>
+      その後、もう一度呼び出すと繰り返し実行することが可能です。<br>
+      サンプルコードでは、2秒に1度li要素が足されているコードです。<br>
+      永久に動かない様に、10回動くと停止します。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="PodYjwB" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/PodYjwB">
+      timer02</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面で確認</p>
+
+    <h3>カウントアップ</h3>
+    <div class="view">
+    <p>
+      counterIDに1秒に1度数値が増えていくカウントアップを作りましょう。
+    </p>
+    <p id="counter" style="font-size:40px"></p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        実行時にすぐに１にならないように、変数の動く順番に注意しましょう。<br>
+        一定の時間で定期的に実行する際、setInterval関数もありますので次のファイルで触れていきます。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/timer02.js"></script>
+</body>
+</html>

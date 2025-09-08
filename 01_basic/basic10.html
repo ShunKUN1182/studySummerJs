@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - ウィンドウに出力する</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>要素の取得 - id属性</h2>
+    <p>
+      HTMLやCSSをJavaScriptで操作するために、要素の取得を行います。<br>
+      HTMLの要素や属性を取得し、コンソール画面に出力しましょう。<br>
+      取得の仕方<br>
+      HTML文書にあるid属性名textを取得する場合<br><br>
+      記述方法<br>
+      document.getElementById("text")<br>
+      後から何度も記載しなくても良い様に、変数を用いてデータを保存しておきます。<br>
+      呼び出す要素は後から変わらない為、定数を用いてデータを保存します。<br><br>
+      定数を使ってデータを保存する場合<br>
+      const text = document.getElementById("text");
+      
+    </p>
+
+    <h3>要素の取得</h3>
+    <p>
+      下記に記載する各要素のid属性の値をコンソール画面に出力してみましょう。
+    </p>
+    <div class="view">
+      <p id="text">textIDの要素を取得する</p>
+      <a href="" id="link">linkIDの要素を取得する</a>
+      <p><input type="button" value="ボタン" id="btn"> btnIDの要素を取得する</p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        id属性は、HTMLファイルの中に一意の名前というルールがありますので、取得出来る値はID属性を誤って2つ書かない限り必ず1つの要素を取得する事が可能です。<br>
+        慣れない間は、取得・操作したい要素にはid属性をつけておくと操作がしやすいです。<br>
+        コンソール画面で見てみると、getElementBy~ で記載したどの要素も該当の要素が取得出来ていることが分かります。<br>
+        
+      </p>
+    </div>
+  </section>
+  </main>
+  <script>
+    // basicの間はここにJavaScriptを直接記載しましょう
+    // 定数textを作成する
+    const text = document.querySelector("#text");
+    // コンソールにtextを表示
+    console.log(text);
+    
+    // 定数linkを作成する
+    const link = document.getElementById("link");
+    // コンソールにlinkを表示する
+    console.log(link);
+    
+    // 定数btnを作成する
+    const btn = document.getElementById("btn");
+    // コンソールにbtnを表示する
+    console.log(btn);
+    
+
+  </script>
+</body>
+</html>

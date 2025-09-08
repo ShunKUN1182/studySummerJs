@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - DOM</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>DOMその1</h2>
+    <p>
+      JavaScriptの基本文法が終わりました。<br>
+      HTMLやCSSを操作するために、DOM操作に移ります。<br>
+      DOMとは、HTMLの各要素の情報を取得したり、変更したりするための方法です。<br>
+      まずは下記のサンプルコードをみてみましょう。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="YzjvqqY" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/YzjvqqY">
+      dom01</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面でhelloが入っていることを確認</p>
+
+    <h3>DOMの作成</h3>
+    <div class="view">
+    <p>
+      サンプルコードを参考に、body要素に「Hello DOM」と文字を表示しましょう。<br>
+      bodyの中身がHello DOMという文字に置き換わるので、画面が真っ白になり文字が表示されるはずです。
+    </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          document はHTMLを操作する入り口を指します。<br>
+          . でその中を参照するので<br>
+          document.body は、「HTMLのbody要素」を指し<br>
+          document.body.innerTextで 「body要素の中にいる文字」を意味します。<br>
+          コンソールに、documentやdocument.bodyを記載して中身を出力すると、<br>
+          innerText以外にも沢山の参照可能な値があるので、確認してみましょう。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/dom01.js"></script>
+</body>
+</html>

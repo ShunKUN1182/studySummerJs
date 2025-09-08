@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>do while文</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      似た文で、do while文もあります。<br>
+      do{<br>
+        //実行したい内容<br>
+      }<br>
+      while(条件)<br>
+      条件に合わなくても1度は必ずdo（実行）されるのが違いです。
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="GRBdvdQ" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/GRBdvdQ">
+      繰り返し04</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>変数countは10より大きい条件ですが、一度実行されます</p>
+
+    <h3>サンプルコードを記載し、コンソール画面で確認してみましょう</h3>
+    <div class="view">
+      <p>
+        上記サンプルコードを実行し、一度だけコンソール画面に表示されるのを確認します。<br>
+        そのあと、whileの条件内を0に変更し、実行結果の違いを確認しましょう。
+      </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        do while は一度だけ必ず実行されるのが特徴です
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/while02.js"></script>
+</body>
+</html>

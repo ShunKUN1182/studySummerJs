@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>if文2</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      01で記載された条件は、19より大きい数値の場合でした。<br>
+      数値が条件に合わない場合はコンソール画面に表示されないため、if文の内容はスキップされたことが分かります。<br>
+      次に、条件に合わなかった場合には、ことなった内容を表示させる為にif文に、条件に合わなかった場合のelseを追加しましょう。<br>
+      <br>
+      書き方<br>
+      if(条件){<br>
+        条件に合う場合<br>
+      }<br>
+      else{<br>
+        条件に合わなかった場合<br>
+      }<br>
+    </p>
+    <!-- codepen -->
+    <h3>条件式 - コンソール画面で確認</h3>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="dyjmbWQ" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/dyjmbWQ">
+      条件分岐02</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>定数ageに10が入っているため、条件に合わずelse内にある「未成年です。」と表示されます。</p>
+    <h3>条件文を書いてみましょう</h3>
+    <div class="view">
+      <p>
+        定数 walletを作成し、2000を代入する<br>
+        定数 itemAを作成し、2980を代入する<br>
+        walletとitemAを比較し、<br>
+        購入可能（walletの数値以下）であれば「購入することができます」とコンソール画面に表示。<br>
+        購入不可であれば「購入することができません」とコンソール画面に表示。<br>
+        walletは2000なので、「購入することができません」と表示されたら、定数walletの値を変更して<br>
+        「購入することができます」も確認しておきましょう。
+      </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        wallet（財布）とitemA（商品）を比べて購入出来るかを比較するので<br>
+        財布より商品の値段が小さい場合と考えること。<br>
+        ※財布の中身がピッタリある時は購入可能なので条件の記号に気をつけましょう。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/if02.js"></script>
+</body>
+</html>

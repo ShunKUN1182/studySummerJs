@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - function</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>関数 その3 - return</h2>
+    <p>
+      関数内にreturnを記載すると、そこに記載した内容を実行時に返します。<br>
+      例えば、return 2 と書くと、2を関数実行時に返します。<br>
+      サンプルコードでは、数値に10%を加算して返します。<br>
+      税率の計算・入力の有無など、関数での結果を元に何か処理を行いたい場合はreturnを記載して値を返しましょう。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="eYjqwqE" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/eYjqwqE">
+      function03</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面で確認</p>
+
+    <h3>関数 - pxを設定する</h3>
+    <p>
+      入力した数値にpxを追加する関数 setpx を設定し、下記input/relustIDに<br>
+      データを入力しましょう。
+    </p>
+    <div class="view">
+      <input type="text" id="num"><button id="btn">入力</button>
+    <p>
+      入力された値：<span id="input"></span><br>
+      px値を追加した値：<span id="result"></span>
+    </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        returnが実行されると、関数はそれ以降のコードは実行されません。<br>
+        詳しくは、<a href="https://jsprimer.net/basic/function-declaration/#function-declaration" target="new">関数と宣言</a>を確認してください
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/function04.js"></script>
+</body>
+</html>

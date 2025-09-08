@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>for文</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      for01では、0回目と表示されました。1回目と表示したい場合、変数iの初期値を0ではなく1にする必要があります。<br>
+      下記サンプルコードを確認してみましょう。
+    </p>
+    <!-- codepen -->
+    <h3>繰り返し - コンソール画面で確認</h3>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="ExpEOjd" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/ExpEOjd">
+      繰り返し02</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    
+    <h3>実際に繰り返し文を書いてみましょう</h3>
+    <div class="view">
+      <p>
+        for文を使って、7回繰り返します<br>
+        表示内容は、<br>
+        「5回目の表示」<br>
+        から<br>
+        「11回目の表示」となるようにコンソール画面に表示させましょう。
+      </p>
+
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        for文の繰り返す条件は、コードを見て何回繰り返されているか<br>
+        分かりやすさを意識しましょう。<br>
+        今回は5から11なので、条件も 5&lt;=11と書いた人もいるかもしれません。<br>
+        7回繰り返す事を分かりやすく伝えるためには、i&lt;7 または i&lt;=7として<br>
+        5から11回目の表示となる様にするにはどうしたら良いかも考えてみてください。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/for02.js"></script>
+</body>
+</html>

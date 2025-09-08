@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - loop</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>loop その4 - find</h2>
+    <p>
+      配列の要素から条件を満たす「最初の」要素を返します<br>
+      一番最初に見つかった要素のみが返ってきます。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="OJoLWxd" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/OJoLWxd">
+      loop04</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面で確認</p>
+
+    <h3>くだもの検索</h3>
+    <div class="view">
+      <p>
+        入力欄 nameIDに下記<br>
+        appke / banana / lemon / peach / kiwi / mango から検索<br>
+        「くだもの名：価格はxxxです」とfindを使って表示させましょう。
+      </p>
+      <input type="text" id="name"><button id="btn">検索</button>
+    <p>検索したくだものは、<span id="out"></span></p>
+      
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          説明にある様に、findは最初に該当した要素のみを返します。<br>
+          複数該当する要素を見つけたい場合は、filterを使って実現しましょう。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/loop04.js"></script>
+</body>
+</html>

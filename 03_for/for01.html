@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>for文</h2>
+    <p>
+      HTMLのbody要素に、script要素を記載してjsフォルダにファイル名.jsを作成し読み込みすること<br>
+      ※ サンプルコードの書き方を参考にしてください エラーは無視
+    </p>
+    <p>
+      同じ事を何度も繰り返しする時や、決まったルールで何度も実行する場合繰り返し文としてfor文を使うことができます。<br>
+      <br>
+      書き方<br>
+      for(カウンター;終了条件;カウンターの増減){<br>
+        //繰り返したい内容をここに書く<br>
+      }<br>
+      下記のサンプルプログラム、5回コンソール画面に文字を表示させるものを確認してください。
+    </p>
+    <!-- codepen -->
+    <h3>繰り返し - コンソール画面で確認</h3>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="gOjeBVp" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/gOjeBVp">
+      繰り返し01</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    
+    <h3>実際に繰り返し文を書いてみましょう</h3>
+    <div class="view">
+      <p>
+        for文を使って、10回繰り返します。サンプルコードを参考に<br>
+        「0回目の表示」から「9回目の表示」までコンソール画面に表示させてください。
+      </p>
+
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        カウンタ変数iは、for文を使う時にまず最初に使う慣例があります。<br>
+        特に指定が無い限り、iを使用し、使えない場合は隣のjkl..とアルファベットを一つズラしてください。<br>
+        条件が常に満たされた場合、繰り返しが無限に行われるためブラウザがフリーズしますので注意してください。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/for01.js"></script>
+</body>
+</html>

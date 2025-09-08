@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 条件分岐</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>if文4</h2>
+    <p>
+      価格帯を決める際、例えば100〜500の間の様な時や、<br>
+      マイナスの年齢や120歳以上の時など、条件を省きたい場合<br>
+      複合した条件が必要です。<br>
+      100以上「かつ」500以下<br>
+      0より下「または」120以上<br><br>
+      Aの条件 かつ Bの条件 の様に２つの条件どちらの条件も満たす場合は、&& で区切ります<br>
+      Aの条件 または Bの条件 の様に２つの条件どちらか一方の条件が合う場合は、|| で区切ります
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="ExpExza" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/ExpExza">
+      条件分岐04</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <p>コンソール画面を開いて、入力ボックスに「-1 10 130」 とそれぞれ入力すると、結果の違いをコンソール画面で確認できます。</p>
+    
+    <h3>条件文を書いてみましょう - 1日24時間</h3>
+    <div class="view">
+      <p>
+        変数timeを作成し、prompt()を入れ、数値に変換しておく<br>
+        prompt()に数値を入れて、下記の条件になる様にコンソール画面に表示すること。<br>
+        1. マイナスの時間または、24より大きな数値の場合「そんな時間はありません」とコンソール画面に表示する。<br>
+        2. 1から6までの数値の場合「おやすみなさい」とコンソール画面に表示する<br>
+        3. 7から11までの数値の場合「おはようございます」とコンソール画面に表示する<br>
+        4. 12の時は「お昼ごはん」とコンソール画面に表示する<br>
+        5. 13から17までの数値の場合「こんにちは」とコンソール画面に表示する<br>
+        6. 18から24までの数値の場合「こんばんは」とコンソール画面に表示する        
+      </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        if文をネスト（親子関係:A条件の中にB条件）にして、記述した場合、2つの条件を満たす条件になります
+      </p>
+      <pre><code>
+        if(age >= 0){
+          //0以上の場合
+          if(age <= 6){
+            //6以下の場合　つまり、0以上6以下の条件に満たされる数値の時だけ実行される
+          }
+        }
+
+        if(age >= 0 && age <= 6){
+          //上のネストと同じ条件です。0以上6以下の条件に満たされる数値の時だけ実行される
+        }
+      </code></pre>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/if04.js"></script>
+</body>
+</html>

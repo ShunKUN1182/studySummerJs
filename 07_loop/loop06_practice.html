@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - foreach</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>loop practice - くだもの合計価格</h2>
+    <p>
+      下記の商品リストの価格の合計をtotalIDに出力しましょう。<br>
+      このフェーズでは、forEach/map/filter/find/reduceと行ってきましたが<br>
+      特に方法はこだわらなくて構いません。<br>
+      ただし、くだもの情報のテーブルに追加や削除、変更があった場合でも<br>
+      きちんと結果が反映されるように作りましょう。
+    </p>
+
+    <h3>購入するくだもの一覧</h3>
+    <div class="view">
+      <table>
+        <thead>
+          <tr>
+            <th>商品名</th>
+            <th>価格</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">りんご</td>
+            <td class="price">180</td>
+          </tr>
+          <tr>
+            <td class="name">バナナ</td>
+            <td class="price">460</td>
+          </tr>
+          <tr>
+            <td class="name">キウイ</td>
+            <td class="price">400</td>
+          </tr>
+          <tr>
+            <td class="name">レモン</td>
+            <td class="price">200</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>商品の合計金額は<span id="total"></span>です。</h3>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          動作する順序を考えてみましょう。<br>
+          まずは、HTMLにある果物の価格を取得する必要があります。<br>
+          取得できたらあとは、合計するだけです。<br>
+          ここに、入力や修正、削除の機能が加わればJavaScriptである程度データ操作ができそうです。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/loop06_practice.js"></script>
+</body>
+</html>

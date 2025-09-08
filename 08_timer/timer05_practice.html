@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - timer</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+  <style>
+    ul{
+      list-style: none;
+    }
+    #photo{
+      width: 550px;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+    }
+    #photo li{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #photo li:nth-child(1){
+      z-index: 1;
+    }
+    #photo img{
+      transform: scale(1.25);
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>timer - practice 画像スライドショー</h2>
+    <p>
+      photoIDのul要素内に、li要素に画像が3枚重なっている。<br>
+      positionでliの各要素は重ねて表示するようにスタイルを設定しており<br>
+      1番目のli要素にはz-indexに1がついている。<br>
+      z-indexの重なり順を変更して、2秒経つと次の画像が手前に表示されるように設定を変更すること。
+    </p>
+
+    <div class="view" style="height: 550px;">
+      <ul id="photo">
+        <li><img src="https://source.unsplash.com/CQEJKwxBMr8" alt="photo01"></li>
+        <li><img src="https://source.unsplash.com/bAj4Hs96J8M" alt="photo01"></li>
+        <li><img src="https://source.unsplash.com/urmnC74otpA" alt="photo03"></li>
+      </ul>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+        z-indexの数値は1つづつ増やしていくと重なり順が一番手前に表示される。<br>
+        要素は3つしかないので、012012012と順に指定できるように考えましょう。<br>
+        実現する方法は幾通りもあるので、試行錯誤しながらチャレンジしてみてください。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/timer05_practice.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - DOM</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>DOMその5 - イベント</h2>
+    <p>
+      select要素の場合は、onchangeで変更された時に実行が可能です。<br>
+      選んだoption要素のvalue属性の値は、前回と同じくvalueで取得することが可能です。
+    </p>
+
+    <p class="codepen" data-height="300" data-default-tab="js,result" data-slug-hash="MWBBXPw" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/MWBBXPw">
+      dom05</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <p>Result画面で文字を入力し、メニューを変更して確認</p>
+
+    <h3>入力する文字の出力</h3>
+    <div class="view">
+      <p>
+        下記フォームを使って、textIDに下記のように出力しましょう。<br>
+        出力したい文字「選択したサイズ：Lサイズ」
+      </p>
+      <div id="form">
+        <select id="size">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+      </div>
+
+      <div id="text">
+      </div>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          selectの場合、onchangeを使って現在何が選ばれているのかをイベントとして書きましょう。<br>
+          value属性に入っているものだけでは、表示したい文字には足りないため<br>
+          表示したい文字と組み合わせて出力できるようにしてください。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/dom05.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascriptの基本 - 配列</title>
+  <!-- 表示用のスタイル -->
+  <link rel="stylesheet" href="../common/css/ress.css">
+  <link rel="stylesheet" href="../common/css/common.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="docTtl">JavaScript基本&復習</h1>
+  </header>
+  <main>
+  <section>
+    <h2>配列その6 - 任意の位置の要素を 削除 splice</h2>
+    <p>
+      先頭や末尾以外に、任意の位置の配列の要素を削除したい場合、spliceを使うことで任意の位置を削除することが可能です<br>
+      spliceは自動的に間を詰めてくれるのが特徴で、また必要に応じて追加することもできます。<br><br>
+      配列名.splice(位置,削除する数) または 配列名.splice(位置,削除する数,追加する要素)<br><br>
+      下記サンプルコードを確認してみましょう。
+    </p>
+    <p class="codepen" data-height="300" data-default-tab="js" data-slug-hash="ExpRVBM" data-user="ryuzie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/ryuzie/pen/ExpRVBM">
+      配列06</a> by ryuji takimoto (<a href="https://codepen.io/ryuzie">@ryuzie</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <p>コンソール画面で確認</p>
+    <h3>配列の操作</h3>
+    <div class="view">
+    <p>
+      配列名 menu を作成し、下記内容を入れる<br>
+      Aランチ / Bランチ / モーニング定食 / パスタセット <br>
+      モーニング定食を要素から削除し、コンソール画面に出力しましょう。 
+    </p>
+    </div>
+    <div class="point">
+      <h3>Point</h3>
+      <p>
+          splice()の中の順番は、何番,削除する個数 です。<br>
+          モーニングは配列の何番目か、何個削除するかが分かれば当てはめていきましょう。
+      </p>
+    </div>
+  </section>
+  </main>
+  <!-- HTMLと同じファイル名をjsフォルダ内に作成し、読み込みを行う -->
+  <script src="js/array07.js"></script>
+</body>
+</html>
