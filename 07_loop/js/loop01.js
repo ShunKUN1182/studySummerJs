@@ -8,3 +8,6 @@ const menu = [
 
 const menuList = document.getElementById("menu");
 
+menu.forEach( (e,i) => {
+  menuList.innerHTML += `<li>${e}</li>`
+});
