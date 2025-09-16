@@ -17,3 +17,12 @@ let cities = [
 ];
 
 const result = document.getElementById("result");
+
+cities.filter( (e) => {
+  return e > 400000;
+})
+
+cities.forEach( () => {
+  result.innerHTML += cities.name
+  console.log(cities.name[0]);
+});
