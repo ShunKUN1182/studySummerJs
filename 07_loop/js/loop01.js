@@ -6,3 +6,5 @@ const menu = [
   "カツカレー定食",
 ];
 
+const menuList = document.getElementById("menu");
+
