@@ -10,3 +10,4 @@ let cities = [
   {name:'八尾市',population:264203},
   {name:'寝屋川市',population:229286}
 ];
+
