@@ -11,3 +11,14 @@ let cities = [
   {name:'寝屋川市',population:229286}
 ];
 
+const result = document.getElementById("result");
+
+
+
+const topCity = cities.map(e => e.name);
+
+console.log(topCity);
+
+topCity.forEach(e => {
+  result.insertAdjacentHTML("beforeend" , `<li>${e}</li>`)
+});

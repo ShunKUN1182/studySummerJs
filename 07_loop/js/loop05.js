@@ -7,3 +7,10 @@ const fruit = [
   { name: 'mango', price: 680 }
 ];
 
+const out = document.getElementById("out");
+
+const fruitDate = fruit.map(e => e.price);
+
+const totalPrice = fruitDate.reduce((prev , current) => prev + current);
+
+console.log(totalPrice);
