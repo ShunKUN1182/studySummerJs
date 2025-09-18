@@ -18,3 +18,16 @@ let cities = [
 
 const result = document.getElementById("result");
 
+console.log(cities);
+
+const bigCitys = cities.filter((e)=>{
+  // console.log(e.population > 400000);
+  return e.population > 400000;
+}) 
+
+console.log(bigCitys);
+
+bigCitys.forEach((e)=> {
+  // console.log(e.name);
+  result.insertAdjacentHTML("beforeend" , e.name + ",") 
+});
