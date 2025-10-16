@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>foreach講座</h1>
+    <p>うえもり</p>
+    <p>うえだ</p>
+    <p>たけうち</p>
+    <p>かりや</p>
+    <p>ほそかわ</p>
+    <p>さかぐち</p>
+    <p>ふくしま</p>
+    <button type="button">決定</button>
+    <script>
+        const members = document.querySelectorAll("p");
+        const btn = document.querySelector("button")
+        console.log(members);
+        members.forEach(e => {
+            btn.addEventListener("click" , ()=>{
+                e.style.color = "tomato";
+            })
+        });
+    </script>
+</body>
+</html>
