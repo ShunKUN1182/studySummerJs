@@ -26,3 +26,12 @@ function averageScoreCheck() {
         console.log("がんばりなさい");
     }
 }
+
+// 文字列を数値にする方法！！！
+
+Number();
+parseFloat();
+parseInt();
+
+const text = parseFloat("19387");
+const text2 = "10388";
