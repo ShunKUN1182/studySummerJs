@@ -35,22 +35,26 @@ header {
 
 main {
     position: relative;
-    ul {
-        display: flex;
-        overflow: visible;
+    .slider_wrap {
         width: 100vw;
-        height: 900px;
-        transition: 1s;
-        &:hover {
-            transform: translateX(-100vw);
-            overflow: visible;
-        }
-        li {
+        height: 700px;
+        overflow: hidden;
+        ul {
+            display: flex;
             width: 100vw;
             height: 100%;
-            img {
+            transition: 1s;
+            transform: translateX(0);
+            /* &:hover {
+                transform: translateX(-400vw);
+            } */
+            li {
                 width: 100vw;
                 height: 100%;
+                img {
+                    width: 100vw;
+                    height: 100%;
+                }
             }
         }
     }
