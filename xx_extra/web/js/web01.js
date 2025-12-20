@@ -4,6 +4,8 @@ const slider = document.querySelector("#slider");
 const sliderImg = document.querySelectorAll("#slider>li");
 console.log(sliderImg);
 let sliderIndex = 0;
+let timerId;
+let timer = 3000;
 
 nextBtn.addEventListener("click", () => {
     nextSlider();
@@ -11,6 +13,21 @@ nextBtn.addEventListener("click", () => {
 
 prevBtn.addEventListener("click", () => {
     prevSlider();
+});
+
+autoSlider();
+
+slider.addEventListener("mouseover", () => {
+    stopSlider();
+});
+nextBtn.addEventListener("mouseover", () => {
+    stopSlider();
+});
+prevBtn.addEventListener("mouseover", () => {
+    stopSlider();
+});
+slider.addEventListener("mouseout", () => {
+    autoSlider();
 });
 
 function nextSlider() {
@@ -29,4 +46,17 @@ function prevSlider() {
         sliderIndex -= 1;
     }
     slider.style.transform = `translateX(-${sliderIndex}00vw)`;
+}
+
+function autoSlider() {
+    if (!timerId) {
+        timerId = setInterval(() => {
+            nextSlider();
+        }, timer);
+    }
+}
+
+function stopSlider() {
+    clearInterval(timerId);
+    timerId = null;
 }
