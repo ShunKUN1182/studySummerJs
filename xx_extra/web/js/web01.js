@@ -3,20 +3,22 @@ const prevBtn = document.querySelector("#prev_btn");
 const slider = document.querySelector("#slider");
 const sliderImg = document.querySelectorAll("#slider>li");
 console.log(sliderImg);
-let sliderNum = 0;
+let sliderIndex = 0;
 
 nextBtn.addEventListener("click", () => {
-    sliderNum -= 1;
-    if (sliderNum == 0 - sliderImg.length) {
-        slider.style.transform = `translateX(0)`;
+    if ((sliderIndex + 1) % sliderImg.length == 0) {
+        sliderIndex = 0;
+    } else {
+        sliderIndex += 1;
     }
-    slider.style.transform = `translateX(${sliderNum}00vw)`;
+    slider.style.transform = `translateX(-${sliderIndex}00vw)`;
 });
 
 prevBtn.addEventListener("click", () => {
-    sliderNum += 1;
-    if (sliderNum == sliderImg.length) {
-        slider.style.transform = `translateX(${sliderImg.length}00vw)`;
+    if ((sliderIndex + sliderImg.length) % sliderImg.length == 0) {
+        sliderIndex = sliderImg.length - 1;
+    } else {
+        sliderIndex -= 1;
     }
-    slider.style.transform = `translateX(${sliderNum}vw)`;
+    slider.style.transform = `translateX(-${sliderIndex}00vw)`;
 });

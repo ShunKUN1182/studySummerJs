@@ -46,7 +46,7 @@ main {
             transition: 1s;
             transform: translateX(0);
             /* &:hover {
-                transform: translateX(-400vw);
+                transform: translateX(-100vw);
             } */
             li {
                 width: 100vw;
