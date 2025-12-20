@@ -6,19 +6,27 @@ console.log(sliderImg);
 let sliderIndex = 0;
 
 nextBtn.addEventListener("click", () => {
+    nextSlider();
+});
+
+prevBtn.addEventListener("click", () => {
+    prevSlider();
+});
+
+function nextSlider() {
     if ((sliderIndex + 1) % sliderImg.length == 0) {
         sliderIndex = 0;
     } else {
         sliderIndex += 1;
     }
     slider.style.transform = `translateX(-${sliderIndex}00vw)`;
-});
+}
 
-prevBtn.addEventListener("click", () => {
+function prevSlider() {
     if ((sliderIndex + sliderImg.length) % sliderImg.length == 0) {
         sliderIndex = sliderImg.length - 1;
     } else {
         sliderIndex -= 1;
     }
     slider.style.transform = `translateX(-${sliderIndex}00vw)`;
-});
+}
